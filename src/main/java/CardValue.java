@@ -17,9 +17,6 @@ public enum CardValue {
     QUEEN("Queen"),
     KING("King");
 
-    /**
-     * The string representation of the card value.
-     */
     private final String name;
 
     /**
@@ -31,7 +28,8 @@ public enum CardValue {
     }
 
     /**
-     * {@inheritDoc}
+     * get string value
+     * @return the value
      */
     @Override
     public String toString() {
