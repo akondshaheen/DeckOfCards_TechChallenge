@@ -1,6 +1,3 @@
-package main.java;
-
-
 public class Card {
 
     private final Suit suit;
@@ -9,5 +6,13 @@ public class Card {
     public Card(Suit suit, CardValue cardValue) {
         this.suit = suit;
         this.cardValue = cardValue;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "suit=" + suit +
+                ", cardValue=" + cardValue +
+                '}';
     }
 }

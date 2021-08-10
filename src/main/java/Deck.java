@@ -1,5 +1,3 @@
-package main.java;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -7,7 +5,6 @@ import java.util.logging.Logger;
 public class Deck implements DeckInterface {
     private final List<Card> cards = new ArrayList<>();
     private final static Logger LOGGER = Logger.getLogger(Deck.class.getName());
-
 
     public Deck() {
         for (Suit suit : Suit.values()) {
@@ -24,7 +21,7 @@ public class Deck implements DeckInterface {
      */
     @Override
     public void shuffle() {
-        LOGGER.info("Starting shuffling deck...");
+        LOGGER.info("Started shuffling deck...");
         int size = cards.size();
         for (int i = 0; i < size; i++) {
             int swapIndex = (int) (Math.random() * size);

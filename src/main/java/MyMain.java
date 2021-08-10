@@ -1,5 +1,3 @@
-package main.java;
-
 import java.util.logging.Logger;
 
 public class MyMain {

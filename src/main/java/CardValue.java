@@ -1,6 +1,3 @@
-package main.java;
-
-
 public enum CardValue {
 
     ACE("Ace"),
